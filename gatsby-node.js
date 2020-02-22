@@ -1,3 +1,5 @@
+const path = require('path')
+
 /**
  * Implement Gatsby's Node APIs in this file.
  *
@@ -21,13 +23,13 @@ exports.createPages = async ({graphql, actions}) => {
         }
     `)
 
-    result.data.allWordpressPost.edges.forEach((({node}) => {
+    result.data.allWordpressPost.edges.forEach(({node}) => {
         createPage({
             path: node.slug,
-            component: path.resolve('./src/templates/post'),
+            component: path.resolve('./src/templates/post.js'),
             context: {
-                slug: node.slug
-            }
+                slug: node.slug,
+            },
         })
-    }))
+    })
 }

@@ -10,7 +10,7 @@ module.exports = {
             resolve: `gatsby-source-wordpress`,
             options: {
                 baseUrl: `www.perilouschronicle.com`,
-                includedRouts: ['**/posts', '**/pages'],
+                includedRoutes: ['**/posts', '**/pages'],
             },
         },
         {
