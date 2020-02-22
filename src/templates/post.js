@@ -1,11 +1,18 @@
 import React from 'react'
+import Layout from '../components/layout'
 import {graphql} from 'gatsby'
 
-const Post = ({title, content}) => (
-    <article>
-        <h1>{title}</h1>
-        <div dangerouslySetInnerHTML={{__html: content}} />
-    </article>
+const Post = ({
+    data: {
+        wordpressPost: {title, content},
+    },
+}) => (
+    <Layout>
+        <article>
+            <h1>{title}</h1>
+            <div dangerouslySetInnerHTML={{__html: content}} />
+        </article>
+    </Layout>
 )
 export default Post
 
