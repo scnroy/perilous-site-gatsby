@@ -12,7 +12,7 @@
     "gatsby-plugin-react-helmet": "3.1.23",
     "gatsby-plugin-sharp": "2.4.8",
     "gatsby-source-filesystem": "2.1.51",
-    "gatsby-source-wordpress": "3.1.66",
+    "gatsby-source-wordpress": "4.0.1",
     "gatsby-transformer-sharp": "2.3.17",
     "prop-types": "15.7.2",
     "react": "16.12.0",
